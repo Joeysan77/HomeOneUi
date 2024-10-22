@@ -1,0 +1,358 @@
+html , body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+}
+body {
+    font-family: samsung-sans;
+    font-weight: 800;
+    transition: 0.5s;
+}
+body {
+    height: 100%;
+}
+@font-face  {
+    font-family: 'samsung-sans';
+    src: url('Fonts/SamsungSans-Regular.ttf');
+    
+}
+body ,button  , p , input {
+    font-family: samsung-sans;
+}
+#container {
+    width: 100%;
+    height: 100.1%;
+    background: url('background.jpg');
+    background-size: 100%;
+    position:absolute;
+    padding: 5px 0px;
+    border-radius: 35px;
+}
+#header {
+    margin-top: 20%;
+    width: 100%;
+    display: flex;
+    transition: 0.5s , opacity 0.2s;
+}
+#b-time{
+    padding: 0;
+    margin:0;
+    font-size: 100px;
+    color: lightblue;
+    flex: 1;
+    text-align: center;
+    transition: 0.3s;
+    
+}
+#date p {
+    text-align: center;
+    color: white;
+    margin: 0;
+    transition: 0.3s;
+}
+#tools {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transition: 0.5s , opacity 0.2s ;
+}
+#tools button {
+    margin: 10px !important;
+    padding: 10px !important;
+    background: rgb(255,255,255,0.2);
+    border:none;
+    border-radius: 20px;
+    color:rgb(255,255,255,0.8);
+    font-size: 28px;
+    flex: 1;
+    transition: 0.3s;
+    max-width: 50px;
+}
+#flash {
+    transform: rotate(-90deg);
+}
+#tools button:active {
+    background: white;
+    color: black;
+}
+#dark {
+    z-index:10;
+    background: transparent;
+    backdrop-filter:blur(0px);
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    overflow-y: hidden;
+    display: none;
+    transition: 0.3s;
+    border-radius:37px;
+}
+#lock {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background:transparent;
+    z-index: 11;
+    transition: 0.3s;
+    color: white;
+    opacity: 0;
+    display: none;
+    border-radius: 35px;
+}
+#locki {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+#ent {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+#password-div {
+    position: absolute;
+    bottom: -70%;
+    width: 200%;
+    transition: 0.3s , 0.4s width , 0.4s margin-left , 0.2s opacity;
+    margin-left: -50%;
+    opacity: 1;
+}
+#pinfo {
+    margin: 0;
+    text-align: center;
+    transition: 0.2s;
+}
+#passinput {
+    margin-left:25%;
+    text-align: right;
+    font-size: 50px;
+    background: transparent;
+    outline: none;
+    color: white;
+    width: 50%;
+    padding-bottom: 5px;
+    border: none;
+    
+    
+}
+#divd {
+    width: 100%;
+    margin-top: 20px;
+    
+}
+#num {
+    width: 80%;
+    margin-left: 10%;
+}
+#num div button {
+    flex: 1;
+    font-size: 40px;
+    padding: 10px  0px;
+    border-radius: 35px;
+    flex-wrap: wrap;
+    margin: 15px;
+    background: transparent;
+    transition: 0.3s;
+    color: white;
+    border: none;
+}
+#num div button:active {
+    background: white;
+    color: black;
+}
+#num div {
+    display: flex;
+    width: 100%;
+}
+#emer {
+    background: rgb(255,255,255,0.3);
+    margin-top: 25px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    margin-left: 30%;
+    border-radius: 15px;
+    border: none;
+    
+}
+#go {
+    background: #5F96F6 !important;
+}
+#batinfo {
+    position: absolute;
+    right: 10%;
+    display: flex;
+    color: white;
+}
+#batdig {
+    border: 1.5px solid gray;
+    width: 40px;
+    border-radius: 6px;
+    padding-left: 2px;
+    direction: rtl;
+}
+#batinfo div {
+    flex: 1;
+}
+#lev {
+    margin: 1px;
+    background: white;
+    height: 80%;
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+    
+}
+#batlev {
+    margin-top: 4px;
+}
+#h-time {
+    position: fixed;
+    z-index: 14;
+    top: 15%;
+    color: white;
+    display: flex;
+       width: 300%;
+       margin-left: -100px;
+       transition: 0.3s;
+    justify-content: space-between;
+    opacity: 0;
+    display: none;
+    height: 500px;
+    margin-top: -200px;
+    
+}
+#mon {
+    font-size: 17px;
+}
+#hometime {
+    font-size: 50px;
+    
+ 
+}
+#hometime p {
+    font-size: 20px;
+}
+#timer {
+    margin-left: 15px;
+    flex: 1;
+     background: rgb(255,255,255,0.2);
+     padding: 6px;
+     border-radius: 15px;
+}
+#weather {
+    flex: 1;
+    background: rgb(255,255,255,0.2);
+    margin: 20px;
+    padding: 6px;
+    border-radius: 15px;
+    text-align: center;
+}
+#weather i {
+    font-size: 50px;
+    
+}
+#degr {
+    font-size: 60px;
+    margin: 0;
+}
+#gsearch {
+     position: fixed;
+    z-index: 14;
+    top: 45%;
+       width: 180%;
+       background:transparent;
+       border-radius: 20px;
+       margin-left: -43%;
+    justify-content: space-between;
+    padding:8px;
+    display:none;
+    opacity:0;
+    transition: 0.3s;
+    
+}
+#gsearch img {
+    height: 30px;
+    flex: 1;
+    max-width: 30px;
+}
+#voi {
+    margin-left: 60%;
+}
+#apps {
+    position: fixed;
+    z-index: 14;
+    top: 60%;
+    width: 180%;
+    margin-left:-50%;
+    display: none;
+    transition: 0.3s;
+}
+#apps div {
+    flex: 1;
+    padding: 0;
+    margin: 20px;
+    transition: 0.3s;
+}
+#apps div img {
+    width: 60px;
+    max-width: 60px;
+    border-radius: 35%;
+    padding: 0;
+    transition: 0.3s;
+    background: red;
+    
+}
+#apps div p {
+    text-align: center;
+    color: white;
+    margin-top: 8px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+#dock {
+    position: fixed;
+    z-index: 14;
+    top: 85%;
+    width: 300%;
+    margin-left:-150%;
+    display: none;
+    justify-content: space-between;
+    background: transparent;
+    padding: 0px 5px;
+    transition: 0.3s;
+    border-radius: 25px;
+}
+#dock img {
+    width: 55px;
+    flex: 1;
+    max-width: 55px;
+    margin: 10px;
+    transition: 0.3s;
+    border-radius: 35%;
+}
+#loader {
+    background: rgb(0,0,0,0.5);
+    z-index: 15;
+    height: 90%;
+    padding-top: 45%;
+    width: 100%;
+    position: fixed;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+    backdrop-filter:blur(8px);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    overflow: hidden;
+}
+#loader i {
+    font-size: 40px;
+}
