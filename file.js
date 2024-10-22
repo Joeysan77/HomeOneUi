@@ -26,7 +26,7 @@ function up() {
   tools.style.opacity = "0"
   tools.style.bottom = "-50%"
   dar.style.marginTop = "-50%"
-  
+  cont.style.position = "absolute"
   function upp() {
       heade.style.display = "none"
       tools.style.display = "none"
