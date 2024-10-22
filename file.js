@@ -321,7 +321,8 @@ else  if (d.getMinutes() == 3) {
    }
    
    time = d.getHours() + ":" + min
-   document.getElementById("b-time").innerHTML = time
+ document.getElementById("b-time").innerHTML = time
+  
 if (d.getHours() > 12) {
    mm = "PM"
    hou = d.getHours() - 12
@@ -329,7 +330,7 @@ if (d.getHours() > 12) {
 }
 else {
     mm = "AM"
-    hou = d.getHours
+    hou = d.getHours()
 }
 document.getElementById("hometime").innerHTML = hou + " : " + min + " " + mm
 mont = d.getMonth() + 1
