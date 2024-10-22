@@ -29,6 +29,7 @@ body ,button  , p , input {
     position: absolute;
     padding: 5px 0px;
     border-radius: 35px;
+    box-sizing:border-box;
 }
 #header {
     margin-top: 20%;
