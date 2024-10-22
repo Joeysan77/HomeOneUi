@@ -26,7 +26,7 @@ body ,button  , p , input {
     height: 101%;
     background: url('background.jpg');
     background-size: 100%;
-    position:absolute;
+    position:fixed;
     padding: 5px 0px;
     border-radius: 35px;
 }
