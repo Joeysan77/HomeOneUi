@@ -357,6 +357,7 @@ function loade() {
     lorr = document.getElementById("loader")
     lorr.style.opacity = "0"
     lorr.style.backdropFilter = "blur(0px)"
+    alert("If Charger is connected, please remove charger and reload webpage, then insert charger")
     function lorg() {
         lorr.style.display = "none"
     }
