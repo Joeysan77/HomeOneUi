@@ -269,7 +269,6 @@ function lightt() {
     }
     else {
         bol.className = "fa fa-bolt"
-        navigator.vibrate(100)
         
     }
     
