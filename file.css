@@ -30,6 +30,7 @@ body ,button  , p , input {
     padding: 5px 0px;
     border-radius: 35px;
     transition:0.3s;
+    background-repeat:no-repeat;
     box-sizing:border-box;
 }
 #header {
